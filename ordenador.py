@@ -16,3 +16,36 @@ class ordenador():
         self.__precioBase=precioBase
         self.__capacidad=capacidad
         self.__procesador=procesador
+
+    @property
+    def precioBase(self):
+       return self.__precioBase
+    
+    @precioBase.setter
+    def precioBase(self, precioBase):
+       self.__precioBase=precioBase
+
+
+    @property
+    def capacidad(self):
+       return self.__capacidad
+    
+    @capacidad.setter
+    def capacidad(self, capacidad):
+       self.__capacidad=capacidad
+
+
+    @property
+    def procesador(self):
+       return self.__procesador
+    
+    @procesador.setter
+    def procesador(self, procesador):
+       self.__procesador=procesador
+
+
+class portatil(ordenador):
+    def __init__(self, precioBase, capacidad, procesador):
+        self.__precioBase=precioBase
+        self.__capacidad=capacidad
+        self.__procesador=procesador
